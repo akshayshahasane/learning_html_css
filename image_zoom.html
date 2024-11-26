@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-wrapper{
+            width: 1000px;
+            height: 800px;
+            overflow: hidden;
+            border: 5px solid red;
+            position: relative;
+        }
+        .inner-img{
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+            &:hover{
+                transition: scale(12);
+                opacity: 0.4;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-wrapper">
+        <img class="inner-img" src="images/car.jfif" alt="car"/>
+    </div>
+</body>
+</html>
